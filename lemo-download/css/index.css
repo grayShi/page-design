@@ -1,0 +1,151 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.head-background {
+	z-index: -1;
+    width: 45vw;
+    position: absolute;
+    right: 0;
+}
+
+.body-background {
+	z-index: -1;
+    width: 45vw;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.head-background img, .body-background img {
+    float: right;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    overflow: auto;
+}
+
+.page-body {
+    width: 70vw;
+    min-width: 250px;
+    /*max-width: 400px;*/
+    height: 90vh;
+    text-align: center;
+}
+
+.page-container {
+
+}
+
+.page-body>div {
+    margin-bottom: 10pt;
+}
+
+.middle-margin {
+    margin-bottom: 20pt !important;
+}
+.large-margin {
+    margin-bottom: 30pt !important;
+}
+
+.page-title {
+    color: #4E4DAE;
+    font-size: 13pt;
+}
+
+.android-button {
+    background-color: #4E4DAE;
+    border-radius: 20pt;
+}
+
+.ios-button {
+    position: relative;
+    background-color: #b4bed1;
+    border-radius: 20pt;
+}
+
+.ios-button .later-icon {
+    box-sizing: border-box;
+    top: -1pt;
+    right: 2%;
+    font-size: 8pt;
+    width: 40pt;
+    height: 40pt;
+    padding-right: 5pt;
+    color: #ffffff;
+    position: absolute;
+    background-image: url('../image/later.png');
+    background-repeat:no-repeat;
+    background-size: 90%;
+}
+
+.later-icon .later-text {
+    float: right;
+    width: 80%;
+}
+
+.download-button {
+    height: 40pt;
+    width: 100%;
+    color: #ffffff;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.download-button span {
+    padding-left: 10px;
+}
+
+.download-button img {
+    height: 25pt;
+}
+
+.page-detail {
+    padding: 0 10px;
+    height: 30pt;
+}
+
+.page-detail div:first-child {
+    width: 30pt;
+    height: 30pt;
+    line-height: 30pt;
+    background-color: #4E4DAE;
+    border-radius: 50%;
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+}
+.page-detail div:last-child {
+    box-sizing: border-box;
+    padding-left: 10px;
+    text-align: left;
+    height: 30pt;
+    width: calc(100% - 44pt);
+    float: left;
+    font-size: 11px;
+    color: #969696;
+    display: flex;
+    align-items: center;
+}
