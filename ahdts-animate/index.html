@@ -262,14 +262,21 @@
     });
 
 
-    function scrollInit(e) {
-        e.preventDefault();
+//     function scrollInit(e) {
+//         e.preventDefault();
+//         return false;
+//     }
+
+//     window.addEventListener('mousewheel', scrollInit, { passive: false });
+
+    $('.c_cont').mousewheel(function (event) {
+      if (!$(event.target).parents().hasClass('dialog')) {
+        event.preventDefault();
         return false;
-    }
-
-    window.addEventListener('mousewheel', scrollInit, { passive: false });
-
-
+      }
+      event.stopPropagation();
+      return true;
+    });
 
     $('.ci_message_button').click(function () {
         showDialog();
